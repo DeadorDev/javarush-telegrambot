@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.3.1-SNAPSHOT
+
+* added deployment process to the project
+
 ## 0.2.0-SNAPSHOT
 
 * implemented Command pattern for handling Telegram bot commands
