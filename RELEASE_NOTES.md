@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.3.0-SNAPSHOT
+## 0.3.1-SNAPSHOT
 
 * added deployment process to the project
 
