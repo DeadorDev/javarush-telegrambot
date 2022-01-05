@@ -1,0 +1,1 @@
+INSERT INTO tg_user VALUES ('test_value', true);

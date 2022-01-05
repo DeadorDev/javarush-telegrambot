@@ -2,8 +2,11 @@ package com.github.DeadorDev.jrtb;
 
 import com.github.DeadorDev.jrtb.bot.JavaRushTelegramBot;
 import com.github.DeadorDev.jrtb.command.Command;
+import com.github.DeadorDev.jrtb.repository.entity.TelegramUserRepository;
 import com.github.DeadorDev.jrtb.service.SendBotMessageService;
 import com.github.DeadorDev.jrtb.service.SendBotMessageServiceImpl;
+import com.github.DeadorDev.jrtb.service.TelegramUserService;
+import com.github.DeadorDev.jrtb.service.TelegramUserServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -18,6 +21,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 abstract class AbstractCommandTest {
     protected JavaRushTelegramBot javaRushTelegramBot = Mockito.mock(JavaRushTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(javaRushTelegramBot);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
 
     abstract String getCommandName();
 

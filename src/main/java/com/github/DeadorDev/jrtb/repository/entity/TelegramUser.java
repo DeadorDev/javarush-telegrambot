@@ -1,0 +1,29 @@
+package com.github.DeadorDev.jrtb.repository.entity;
+
+import lombok.Data;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Data
+@Entity
+@Table(name = "tg_user")
+public class TelegramUser {
+
+    @Id
+    @Column(name = "chat_id")
+    private String chat_id;
+
+    @Column(name = "active")
+    private boolean active;
+
+    public String getChat_id() {
+        return chat_id;
+    }
+
+    public void setChat_id(String chat_id) {
+        this.chat_id = chat_id;
+    }
+}
